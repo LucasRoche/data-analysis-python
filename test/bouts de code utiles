@@ -1,0 +1,7 @@
+
+#Retrouver le temps final de la manip
+fData = open(data_file_name, 'r')
+for line in fData:
+    lineReadData = line[ 0 : line.find("\n")]
+    finalTime = lineReadData.split('\t')[0]
+fData.close()
